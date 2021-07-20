@@ -1,0 +1,18 @@
+
+.fab{
+  font-size: 1.25em;
+  margin-right: 0.2em;
+}
+
+
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+
+  .nav-item{
+    margin-right: 1.5em;
+  }
+}

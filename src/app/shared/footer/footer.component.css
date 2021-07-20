@@ -1,0 +1,16 @@
+.footer{
+  background-color: rgb(145, 143, 143);
+  height: 22vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ebd0d1e0;
+  font-weight: 600;
+  text-shadow: 1px 1px rgba(240, 53, 53, 0.884);
+  text-transform: uppercase;
+}
+
+.footer li{
+  font-size: 0.9em;
+}

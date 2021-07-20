@@ -1,0 +1,39 @@
+<div class="row mb-3">
+  <div class="col-md-4 mb-4"  >
+    <div class="card">
+      <div class="card-body-angular">
+        <h5 class="card-title">Fibonacci</h5>
+        <label class="card-title" for="">Valor: {{ valor }}</label>
+        <textarea cols="40"  rows="3" [value]="array"  ></textarea>
+        <div>
+          <button class="btn btn-danger mr-1" (click)="adicionarProximoFibonacci()">Próximo</button>
+          <button class="btn btn-outline-danger" (click)="resetDesafioI()" [disabled]="lista.length === 2">Reset</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4  mb-4">
+    <div class="card">
+      <div class="card-body-angular">
+        <img src="../../assets/image/logo-target.png" alt="logo target-sistema" [ngClass]="{'esconder-img': !visivelLogo}">
+        <label class="card-title"> {{ visivel }}</label>
+        <button class="btn btn-danger" (click)="alteraDesafioII()">Alterar visibilidade</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <div class="card-body-angular">
+        <a (click)="filtrarArray()"><img src="../../assets/image/logo-angular.png" class="logo-angular" alt="logo angular" ></a>
+        <label class="card-title">Matriz: {{ arrayDesafioIII }}</label>
+        <div>
+          <input type="number" max="10" min="0" class="form-control" [(ngModel)]="numeroArray">
+          <button class="btn btn-danger mt-1" (click)="resetDesafioIII()" [disabled]="arrayDesafioIII.length > 1">Reset Matriz</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
