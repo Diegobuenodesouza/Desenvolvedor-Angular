@@ -4,7 +4,7 @@
       <div class="card-body-angular">
         <h5 class="card-title">Fibonacci</h5>
         <label class="card-title" for="">Valor: {{ valor }}</label>
-        <textarea cols="40"  rows="3" [value]="array"  ></textarea>
+        <textarea cols="40"  rows="3" [value]="array" class="form-control"  ></textarea>
         <div>
           <button class="btn btn-danger mr-1" (click)="adicionarProximoFibonacci()">Próximo</button>
           <button class="btn btn-outline-danger" (click)="resetDesafioI()" [disabled]="lista.length === 2">Reset</button>
